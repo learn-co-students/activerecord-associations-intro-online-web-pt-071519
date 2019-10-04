@@ -359,7 +359,7 @@ these relationships, we can use Active Record's `save` functionality:
 ```bash
 [8] pry(main)> adele.save
 => true
-[9] pry(main)> adele
+[9] pry(main)> adele.save
 => #<Artist:0x007fc75b8d9490 id: 1, name: "Adele">
 ```
 
@@ -460,7 +460,7 @@ songs collection:
 => #<Artist:0x007fc75b8d9490 id: 4, name: "Adele">
 ```
 
-We added `rolling_in_the_deep` to `adele`'s collection of songs and we can see
+We added `rolling_in_the_deep` to `adele`'s collpop_ection of songs and we can see
 the `adele` knows it has that song in the collection *and* `rolling_in_the_deep`
 knows about its artist. Not only that, `rolling_in_the_deep` is not persisted to
 the database.
